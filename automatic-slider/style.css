@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Courgette' cursive;
+  color: whitesmoke;
+  font-size: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 9%);
+}
+
+.slider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+  /* border: 2px dashed hsl(30, 44%, 93%); */
+  border-radius: .4em;
+  box-shadow: 0 0 3px .4px rgba(129, 119, 119, 0.5)
+ }
