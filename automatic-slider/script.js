@@ -1,6 +1,6 @@
 let i = 0
 let images = []
-const time = 1500;
+const time = 1200;
 
 images = [
   'https://source.unsplash.com/SQLOsc0HGDI',
