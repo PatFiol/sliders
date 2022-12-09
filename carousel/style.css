@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 1.3rem;
+  --padding-margin: 2rem;
+  --dark-color: hsla(0, 0%, 15%, 0.8);
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(0, 33%, 99%);
+}
+
+.slider {
+  width: 60%;
+  min-width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%,-30%);
+  overflow: hidden;
+
+  background-color: aquamarine;
+  border: 1px solid var(--dark-color);
+  border-radius: .3rem;
+  box-shadow: 0 15px 30px var(--dark-color);
+}
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+img {
+  position: relative;
+  width: 100%;
+  display: block;
+  background-size: cover;
+  object-fit: center;
+  object-position: center;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.dot-container {
+  width: 100%;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+
+}
+
+.dot-container button {
+  color:transparent;
+  width: 1em;
+  height: 1em;
+  border: 1px solid var(--dark-color);
+  border-radius: 50%;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+#prev, #next {
+  font-size: 4em;
+  color: var(--dark-color);
+  background-color: transparent;
+  border: none;
+
+  position:absolute;
+  top: 0;
+  bottom: 0;
+}
+
+#next {
+  right: 0;
+}
